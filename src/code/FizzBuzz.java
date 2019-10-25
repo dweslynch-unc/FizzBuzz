@@ -15,6 +15,17 @@ public class FizzBuzz {
 	}
 
 	public static String fizzBuzz2(int input) {
-		return "";
+		String output = "";
+		
+		if (input % 3 == 0)
+			output += "Fizz";
+		if (input % 5 == 0)
+			output += "Buzz";
+		if (input % 7 == 0)
+			output += "Whoop";
+		if (input % 4 == 0)
+			output += "Wow";
+		
+		return (output.equals("")) ? String.valueOf(input) : output;
 	}
 }
